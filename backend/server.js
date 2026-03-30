@@ -41,3 +41,4 @@ app.post('/order', async (req, res) => {
 });
 
 app.listen(3000, () => console.log("Server started"));
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
